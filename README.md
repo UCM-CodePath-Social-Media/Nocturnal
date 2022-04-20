@@ -31,6 +31,14 @@ Social media application like Twitter where users can post and see people's stor
 * Settings (Accesibility, Notification, General, etc.)
 * Log out
 
+- [x] sign in for account
+- [x] home page is visible
+- [x] capable of creating and posting
+- [x] capable of following others
+- [x] able to see profile pages both yours and others
+- [x] setting page
+- [x] log out
+
 **Optional Nice-to-have Stories**
 * Chat with other users via direct messages
 
