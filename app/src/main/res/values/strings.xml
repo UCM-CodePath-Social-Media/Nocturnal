@@ -1,11 +1,20 @@
 <resources>
     <string name="app_name">Nocturnal</string>
+
+    <!-- Register activity -->
     <string name="username">Username</string>
     <string name="email">Email</string>
-    <string name="username_or_email">Username or email</string>
     <string name="date_of_birth">Date of birth (MM/DD/YYYY)</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">Already have an account? Sign in</string>
+    <string name="passwords_dont_match">Passwords do not match</string>
+
+    <!-- Login activity -->
+    <string name="username_or_email">Username or email</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Don\'t have an account? Sign up</string>
+
+    <!-- Login and register activity -->
     <string name="password">Password</string>
     <string name="confirm_password">Confirm password</string>
-    <string name="login">Login</string>
-    <string name="register">Register</string>
 </resources>
