@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Nocturnal</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="username_or_email">Username or email</string>
+    <string name="date_of_birth">Date of birth (MM/DD/YYYY)</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>
