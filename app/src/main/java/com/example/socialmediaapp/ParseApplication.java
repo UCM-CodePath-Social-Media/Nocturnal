@@ -10,13 +10,17 @@ public class ParseApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        String appId = BuildConfig.BACK4APP_APP_ID;
+        String clientKey = BuildConfig.BACK4APP_CLIENT_KEY;
+        String serverUrl = BuildConfig.BACK4APP_SERVER_URL;
+
         // Register your parse models
-        ParseObject.registerSubclass(Post.class);
+//        ParseObject.registerSubclass(Post.class);
 
         Parse.initialize(new Parse.Configuration.Builder(this)
-                .applicationId("OwGQOdSVMzaG1e7bve69awDumTXYttn8VDvGAeSo")
-                .clientKey("9tiTj1ichJXW7DV4qzPeiz72pMW4qVeUdhXd7yIA")
-                .server("https://parseapi.back4app.com")
+                .applicationId(appId)
+                .clientKey(clientKey)
+                .server(serverUrl)
                 .build()
         );
     }

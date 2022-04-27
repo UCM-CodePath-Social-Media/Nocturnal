@@ -44,6 +44,27 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+<!--        <meta-data-->
+<!--            android:name="com.parse.SERVER_URL"-->
+<!--            android:value="@string/back4app_server_url" />-->
+<!--        <meta-data-->
+<!--            android:name="com.parse.APPLICATION_ID"-->
+<!--            android:value="@string/back4app_app_id" />-->
+<!--        <meta-data-->
+<!--            android:name="com.parse.CLIENT_KEY"-->
+<!--            android:value="@string/back4app_client_key" />-->
+
+            <meta-data
+                android:name="serverUrl"
+                android:value="${BACK4APP_SERVER_URL}" />
+            <meta-data
+                android:name="appId"
+                android:value="${BACK4APP_APP_ID}" />
+            <meta-data
+                android:name="clientKey"
+                android:value="${BACK4APP_CLIENT_KEY}" />
+
     </application>
 
 </manifest>

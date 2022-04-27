@@ -10,6 +10,8 @@ import android.widget.EditText;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.parse.ParseUser;
+
 public class LoginActivity extends AppCompatActivity {
 
     public static final String TAG = "LoginActivity";
@@ -57,6 +59,10 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loginUser(String userIdentifier, String password) {
-        // TODO: validate user
+        // validate user
+//        ParseUser.logInInBackground(userIdentifier,)
+
+        // go to MainActivity when the user is successfully authenticated
+
     }
 }
