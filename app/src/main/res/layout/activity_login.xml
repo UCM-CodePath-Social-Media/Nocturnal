@@ -8,6 +8,22 @@
     tools:context=".LoginActivity">
 
     <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#0E1719"
+        android:fontFamily="@font/inter"
+        android:text="@string/dont_have_account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/text_primary" />
+
+    <Button
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,19 +34,21 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="#2DC653"
+        android:backgroundTint="@color/accent_primary"
         android:fontFamily="@font/inter"
         android:padding="8dp"
-        android:text="Login"
+        android:text="@string/login"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/text_primary"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.192"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck"
         tools:layout_editor_absoluteY="280dp" />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etUsername"
+        android:id="@+id/etUserIdentifier"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textLoginTitle"
@@ -41,18 +59,18 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/et_style"
         android:fontFamily="@font/inter"
-        android:hint="Username or email"
+        android:hint="@string/username_or_email"
         android:inputType="text|textEmailAddress"
         android:padding="16dp"
         android:textColor="#FFFFFF"
-        android:textColorHint="#3B4448"
+        android:textColorHint="@color/text_secondary"
         android:textSize="16sp" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/etUsername"
+        android:layout_below="@+id/etUserIdentifier"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
@@ -61,11 +79,11 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/et_style"
         android:fontFamily="@font/inter"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:padding="16dp"
         android:textColor="#FFFFFF"
-        android:textColorHint="#3B4448"
+        android:textColorHint="@color/text_secondary"
         android:textSize="16sp" />
 
     <TextView
@@ -79,9 +97,9 @@
         android:layout_marginTop="47dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/inter"
-        android:text="Nocturnal"
+        android:text="@string/app_name"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/text_primary"
         android:textSize="32sp"
         android:textStyle="normal|bold" />
 
@@ -94,9 +112,9 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="64dp"
         android:fontFamily="@font/inter"
-        android:text="Login"
-        android:textColor="#FFFFFF"
-        android:textSize="24dp"
+        android:text="@string/login"
+        android:textColor="@color/text_primary"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
 </RelativeLayout>
