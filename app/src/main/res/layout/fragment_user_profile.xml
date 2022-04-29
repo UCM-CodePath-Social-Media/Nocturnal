@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_theme_primary_bg"
-    tools:context=".fragments.PostsFragment">
+    tools:context=".fragments.UserProfileFragment">
 
     <TextView
-        android:id="@+id/tvPostsTitle"
+        android:id="@+id/tvUserProfileTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -17,9 +17,8 @@
         android:layout_marginTop="200dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/inter"
-        android:text="Posts Page"
+        android:text="User Profile Page"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16sp" />
-
 </RelativeLayout>

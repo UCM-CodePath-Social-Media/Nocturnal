@@ -9,6 +9,20 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomNavigation"
+        android:layout_below="@+id/toolbarMain" />
+
+    <!-- Toolbar -->
+    <include
+        android:id="@+id/toolbarMain"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
@@ -20,11 +34,5 @@
         app:itemTextColor="@color/white"
         app:menu="@menu/menu_bottom_navigation" />
 
-    <!-- Toolbar -->
-    <include
-        android:id="@+id/toolbarMain"
-        layout="@layout/toolbar_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
 </RelativeLayout>
