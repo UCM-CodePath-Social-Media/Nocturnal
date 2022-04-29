@@ -53,4 +53,9 @@ dependencies {
 
     // https://mavenlibs.com/maven/dependency/io.github.cdimascio/java-dotenv
     implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+
+    // Material design library
+    implementation "androidx.appcompat:appcompat:${appCompatVersion}"
+    implementation "com.google.android.material:material:${designSupportVersion}"
+
 }

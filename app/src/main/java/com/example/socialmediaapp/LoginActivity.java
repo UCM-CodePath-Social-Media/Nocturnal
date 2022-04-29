@@ -32,9 +32,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        // hide the action bar
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
+        // check if the user is already logged in
+        if (ParseUser.getCurrentUser() != null) {
+            goMainActivity();
+        }
 
         // get widgets from the layout
         etUserIdentifier = findViewById(R.id.etUserIdentifier);
@@ -96,7 +97,7 @@ public class LoginActivity extends AppCompatActivity {
             public void done(ParseUser parseUser, ParseException e) {
                 if (e == null) {
                     // login successful, go to MainActivity
-                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                    goMainActivity();
                 } else {
                     // display error message
                     Toast.makeText(LoginActivity.this, e.getMessage(),
@@ -104,5 +105,11 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void goMainActivity() {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+        finish();
     }
 }

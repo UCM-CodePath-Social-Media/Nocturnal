@@ -12,4 +12,5 @@
     <color name="text_primary">#F8F8F8</color>
     <color name="text_secondary">#78909C</color>
     <color name="accent_primary">#2DC653</color>
+    <color name="dark_theme_secondary_bg">#181F23</color>
 </resources>

@@ -37,10 +37,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        // hide the action bar
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
-
         // get the widgets from the layout
         etUsername = findViewById(R.id.etUsername);
         etEmail = findViewById(R.id.etEmail);
@@ -59,7 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
                 Date dateOfBirth = null;
 
                 try {
-                    dateOfBirth = new SimpleDateFormat("dd/MM/yyyy")
+                    dateOfBirth = new SimpleDateFormat("MM/dd/yyyy")
                             .parse(etDateOfBirth.getText().toString());
                 } catch (java.text.ParseException e) {
                     e.printStackTrace();
@@ -103,9 +99,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void done(ParseException e) {
                 if (e == null) {
-                    Toast.makeText(
-                            RegisterActivity.this,
-                            "Sign up successful",
+                    Toast.makeText(RegisterActivity.this, "Sign up successful",
                             Toast.LENGTH_SHORT).show();
                 }
                 else {
