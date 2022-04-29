@@ -16,6 +16,9 @@ import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class RegisterActivity extends AppCompatActivity {
 
     public static final String TAG = "RegisterActivity";
@@ -34,10 +37,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        // hide the action bar
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.hide();
-
         // get the widgets from the layout
         etUsername = findViewById(R.id.etUsername);
         etEmail = findViewById(R.id.etEmail);
@@ -53,7 +52,15 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String username = etUsername.getText().toString();
                 String email = etEmail.getText().toString();
-                String dateOfBirth = etDateOfBirth.getText().toString();
+                Date dateOfBirth = null;
+
+                try {
+                    dateOfBirth = new SimpleDateFormat("MM/dd/yyyy")
+                            .parse(etDateOfBirth.getText().toString());
+                } catch (java.text.ParseException e) {
+                    e.printStackTrace();
+                }
+
                 String password = etPassword.getText().toString();
                 String confirmPassword = etConfirmPassword.getText().toString();
 
@@ -81,27 +88,23 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void registerUser(User user) {
-        // TODO: register the user
         ParseUser parseUser = new ParseUser();
 
         parseUser.setUsername(user.getUsername());
         parseUser.setPassword(user.getPassword());
         parseUser.setEmail(user.getEmail());
-
-        Log.i(TAG, user.getUsername());
-        Log.i(TAG, user.getEmail());
+        parseUser.put("dateOfBirth", user.getDateOfBirth());
 
         parseUser.signUpInBackground(new SignUpCallback() {
             @Override
             public void done(ParseException e) {
                 if (e == null) {
-                    Toast.makeText(RegisterActivity.this, "Sign up successful", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegisterActivity.this, "Sign up successful",
+                            Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    String errorMessage = e.getMessage();
-
                     ParseUser.logOut();
-                    Toast.makeText(RegisterActivity.this, errorMessage,
+                    Toast.makeText(RegisterActivity.this, e.getMessage(),
                             Toast.LENGTH_SHORT).show();
 
                 }

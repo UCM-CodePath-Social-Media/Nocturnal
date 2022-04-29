@@ -3,18 +3,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/action_profile"
-        android:icon="@android:drawable/ic_menu_myplaces"
-        android:title="Profile"
-        app:showAsAction="always" />
+        android:id="@+id/actionHome"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom" />
+
     <item
-        android:id="@+id/action_compose"
-        android:icon="@android:drawable/ic_menu_edit"
-        android:title="Compose"
-        app:showAsAction="always" />
+        android:id="@+id/actionCreate"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="@string/create"
+        app:showAsAction="ifRoom" />
+
     <item
-        android:id="@+id/action_home"
-        android:icon="@android:drawable/ic_menu_compass"
-        android:title="Home"
-        app:showAsAction="always" />
+        android:id="@+id/actionProfile"
+        android:icon="@drawable/ic_baseline_person"
+        android:title="@string/profile"
+        app:showAsAction="ifRoom" />
 </menu>

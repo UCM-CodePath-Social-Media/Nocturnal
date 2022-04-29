@@ -1,15 +1,17 @@
 package com.example.socialmediaapp;
 
+import java.util.Date;
+
 public class User {
 
     private String username;
     private String email;
-    private String dateOfBirth;
+    private Date dateOfBirth;
     private String password;
 
     public User() {}
 
-    public User(String username, String email, String dateOfBirth, String password) {
+    public User(String username, String email, Date dateOfBirth, String password) {
         this.username = username;
         this.email = email;
         this.dateOfBirth = dateOfBirth;
@@ -32,11 +34,11 @@ public class User {
         this.email = email;
     }
 
-    public String getDateOfBirth() {
+    public Date getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
+    public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
