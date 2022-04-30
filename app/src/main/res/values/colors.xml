@@ -13,4 +13,5 @@
     <color name="text_secondary">#78909C</color>
     <color name="accent_primary">#2DC653</color>
     <color name="dark_theme_secondary_bg">#181F23</color>
+    <color name="accent_secondary">#3199E2</color>
 </resources>

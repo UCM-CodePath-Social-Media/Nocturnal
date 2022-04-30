@@ -45,4 +45,9 @@
     <string name="post">Post</string>
 
     <!-- User profile fragment -->
+
+    <!-- Post -->
+    <string name="post_description">Post description</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
 </resources>
