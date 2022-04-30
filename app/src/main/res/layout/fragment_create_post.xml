@@ -6,19 +6,67 @@
     android:background="@color/dark_theme_primary_bg"
     tools:context=".fragments.CreatePostFragment">
 
-    <TextView
-        android:id="@+id/tvCreatePostTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/etPostDescription"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/et_style"
         android:fontFamily="@font/inter"
-        android:text="Create Post Page"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+        android:gravity="top"
+        android:hint="@string/post_textbox_hint"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@color/text_secondary"
+        android:textColorHint="@color/text_secondary"
+        android:textSize="16sp"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPostDescription"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp">
+
+        <Button
+            android:id="@+id/btnAddImage"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/dark_theme_secondary_bg"
+            android:baselineAligned="false"
+            android:fontFamily="@font/inter"
+            android:padding="16dp"
+            android:text="@string/add_image"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnPost"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/accent_primary"
+            android:fontFamily="@font/inter"
+            android:padding="16dp"
+            android:text="@string/post"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
 </RelativeLayout>

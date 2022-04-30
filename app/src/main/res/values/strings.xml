@@ -25,6 +25,14 @@
     <string name="password">Password</string>
     <string name="confirm_password">Confirm password</string>
 
+    <!-- Settings activity -->
+    <string name="update_username">Update username</string>
+    <string name="update_password">Update password</string>
+    <string name="update_email">Update email</string>
+    <string name="update_bio">Update bio</string>
+    <string name="toggle_dark_mode">Toggle dark mode</string>
+    <string name="log_out">Log out</string>
+
     <!-- Fragments -->
     <string name="create_post">Create Post</string>
     <string name="user_profile">User Profile</string>
@@ -32,6 +40,9 @@
     <!-- Home fragment -->
 
     <!-- Create post fragment -->
+    <string name="post_textbox_hint">Let your voice be read!</string>
+    <string name="add_image">Add Image</string>
+    <string name="post">Post</string>
 
     <!-- User profile fragment -->
 </resources>
