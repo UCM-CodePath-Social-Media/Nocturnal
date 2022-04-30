@@ -19,6 +19,9 @@
         <item name="android:textColorPrimary">@color/white</item>
         <!-- Menu item text color -->
         <item name="actionMenuTextColor">@color/white</item>
-
+    </style>
+    <style name="ToolbarColoredBackArrow" parent="Theme.SocialMediaApp">
+        <!-- Action bar back button color -->
+        <item name="android:textColorSecondary">@color/white</item>
     </style>
 </resources>
