@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nocturnal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101619"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/Nocturnal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nocturnal"
+        android:textAlignment="center"
+        android:textColor="#00FA00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Nocturnal" />
+
+    <TextView
+        android:id="@+id/create_post"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#787878"
+        android:text="Let your voice be read!"
+        android:textColor="#CFD8DC"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/add_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FA00"
+        android:baselineAligned="false"
+        android:text="Add an Image"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:text="Add an Image" />
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0000FA"
+        android:text="Post"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>
