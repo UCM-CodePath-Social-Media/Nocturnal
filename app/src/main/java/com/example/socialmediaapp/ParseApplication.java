@@ -14,8 +14,8 @@ public class ParseApplication extends Application {
         String clientKey = BuildConfig.BACK4APP_CLIENT_KEY;
         String serverUrl = BuildConfig.BACK4APP_SERVER_URL;
 
-        // Register your parse models
-//        ParseObject.registerSubclass(Post.class);
+        // register Parse models
+        ParseObject.registerSubclass(Post.class);
 
         Parse.initialize(new Parse.Configuration.Builder(this)
                 .applicationId(appId)

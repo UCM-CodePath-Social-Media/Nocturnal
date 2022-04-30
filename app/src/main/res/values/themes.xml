@@ -20,7 +20,7 @@
         <!-- Menu item text color -->
         <item name="actionMenuTextColor">@color/white</item>
     </style>
-    <style name="ToolbarColoredBackArrow" parent="Theme.SocialMediaApp">
+    <style name="ToolbarColoredBackArrow" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Action bar back button color -->
         <item name="android:textColorSecondary">@color/white</item>
     </style>
