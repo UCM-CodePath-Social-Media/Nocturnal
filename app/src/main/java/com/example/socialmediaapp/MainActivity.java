@@ -50,14 +50,17 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.actionHome:
                         // set to the posts fragment
+                        getSupportActionBar().setTitle(R.string.home);
                         fragment = postsFragment;
                         break;
                     case R.id.actionCreate:
                         // set to the create post fragment
+                        getSupportActionBar().setTitle(R.string.create_post);
                         fragment = createPostFragment;
                         break;
                     case R.id.actionProfile:
                         // set to the user profile fragment
+                        getSupportActionBar().setTitle(R.string.user_profile);
                         fragment = userProfileFragment;
                         break;
                     default:
