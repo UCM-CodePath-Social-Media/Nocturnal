@@ -92,6 +92,9 @@ public class CreatePostFragment extends Fragment {
                     Toast.makeText(getContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
 
+                // clear the description text box
+                etPostDescription.setText("");
+
                 // go back to the posts page
                 Fragment postsFragment = new PostsFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();

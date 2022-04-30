@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_marginBottom="16dp"
     android:background="@drawable/post_style"
     android:orientation="vertical">
 
@@ -13,25 +13,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="0dp"
         android:fontFamily="@font/inter"
         android:text="@string/username"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/tvPostDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUsername"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/post_date"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp" />
+
     <ImageView
         android:id="@+id/ivImage"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_below="@id/tvUsername"
+        android:layout_below="@id/tvPostDate"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:contentDescription="post image"
         android:scaleType="centerCrop"
         tools:srcCompat="@tools:sample/avatars" />
+
 
     <TextView
         android:id="@+id/tvDescription"
@@ -63,8 +78,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_weight="1"
-            android:drawableStart="@drawable/ic_baseline_thumb_up"
             android:backgroundTint="@color/accent_primary"
+            android:drawableStart="@drawable/ic_baseline_thumb_up"
             android:fontFamily="@font/inter"
             android:text="@string/like"
             android:textAllCaps="false"

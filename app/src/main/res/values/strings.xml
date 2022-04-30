@@ -45,8 +45,10 @@
     <string name="post">Post</string>
 
     <!-- User profile fragment -->
+    <string name="join_date">Join date</string>
 
     <!-- Post -->
+    <string name="post_date">Post date</string>
     <string name="post_description">Post description</string>
     <string name="like">Like</string>
     <string name="comment">Comment</string>
